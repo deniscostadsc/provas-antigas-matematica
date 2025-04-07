@@ -14,8 +14,8 @@ function download_html_from_url {
 function get_pdf_links_from_html {
     hxnormalize -xe "${1}" |\
     hxselect -s '\n' '::attr(href)' |\
-    # grep -i '"[^"]*matem[aá]tica[^"]*\.pdf"' |\
-    grep -i '"[^"]*gabarito[^"]*\.pdf"' |\
+    grep -i '"[^"]*matem[aá]tica[^"]*\.pdf"' |\
+    # grep -i '"[^"]*gabarito[^"]*\.pdf"' |\
     sed 's/href="//g;s/"//g'
 }
 
