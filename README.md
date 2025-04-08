@@ -17,12 +17,12 @@ Eu estou estudando matemática do zero, então estou revendo coisas desde o
 fundamental. E para verificar meu progresso, toda semana eu resolvo algumas
 provas. E eu estou seguindo esta ordem:
 
-- [OBMEP (nível 1)](./olimpiadas-de-matematica/obmep/nivel-1)
+- [OBMEP (nível 1)](./provas/olimpiadas-de-matematica/obmep/nivel-1)
 - [Colégios militares (ensino
-  fundamental)](./concursos-militares/ensino-fundamental/colegio-militar/)
-- [OBMEP (nível 2)](./olimpiadas-de-matematica/obmep/nivel-2)
+  fundamental)](./provas/concursos-militares/ensino-fundamental/colegio-militar/)
+- [OBMEP (nível 2)](./provas/olimpiadas-de-matematica/obmep/nivel-2)
 - [Colégios militares (ensino
-  médio)](./concursos-militares/ensino-medio/colegio-militar/)
+  médio)](./provas/concursos-militares/ensino-medio/colegio-militar/)
 
 Assim que um nível fica muito fácil, eu passo para o próximo.
 
