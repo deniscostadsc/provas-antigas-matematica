@@ -44,5 +44,5 @@ Eu estou utilizando os seguinte livros:
 
 A ideia não é, e nunca foi, fazer um script genérico que consiga baixar arquivos
 de provas de qualquer site. Então esse processo é manual e exige adaptações para
-cada site. O script atual tem como dependência ter instalado
+cada site. O [script atual](./scripts/download.sh) tem como dependência ter instalado
 [html-xml-utils](https://tracker.debian.org/pkg/html-xml-utils). 
