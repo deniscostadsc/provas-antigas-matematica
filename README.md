@@ -5,6 +5,11 @@ frustrantes, pois é comum que não consigamos ver uma melhora depois de um temp
 Uma maneira de validar o seu conhecimento é resolver provas antigas de concursos
 ou vestibulares.
 
+Durante esse processo tive diversas dificuldade para achar as provas de maneira
+organizada. Cada uma num site diferente, alguns concursos nem disponibilizam as
+provas antigas. Então resolvi baixar e compilar as provas e materiais correlatos
+que uso.
+
 Este repositório reune provas antigas de diversos níveis e concursos diferentes.
 
 ## Como usar este repositório
@@ -31,7 +36,7 @@ Assim que um nível fica muito fácil, eu passo para o próximo.
 Eu estou utilizando os seguinte livros:
 
 - [Teoria e Questões de Matemática - Ensino Fundamental (TQM
-  verde)](https://www.editoraxyz.com/tqm---teoria-e-questoes-de-matematica-ensino-fundamental/p?srsltid=AfmBOoo3nqAdhv8lYKUbYFb20GQ_LWH1Um4BDayNo_24oHbEDSDNE4hk)
+  verde)](https://www.editoraxyz.com/tqm---teoria-e-questoes-de-matematica-ensino-fundamental/p)
 - [Tópicos de Álgebra Elementar (capeta
   azul)](https://loja.uiclap.com/titulo/ua49428/)
 
