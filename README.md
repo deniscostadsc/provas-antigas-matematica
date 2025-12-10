@@ -14,22 +14,26 @@ Este repositório reune provas antigas de diversos níveis e concursos diferente
 
 ## Como usar este repositório
 
-Cada pessoas aprende de maneira diferente. Então o processo aqui descrito, é
+Cada pessoas aprende de maneira diferente. Então o processo aqui descrito é
 pensado para meu uso exclusivo. Mas apesar disso, acredito que ele possa ser
 útil para mais pessoas.
 
 Eu estou estudando matemática do zero, então estou revendo coisas desde o
-fundamental. E para verificar meu progresso, toda semana eu resolvo algumas
-provas. E eu estou seguindo esta ordem:
+fundamental. E para verificar meu progresso, toda semana eu resolvo alguma
+prova. E caso tenha errado algumas questão de algum assunto já visto, reviso o
+assunto na semana sequinte. Assim que um nível de prova fica muito fácil, eu
+passo para o próximo.
+
+Talvez a ordem mais adequada, principalmente quando não se tem uma certeza sobre
+seu nível de matemática, é a seguinte:
 
 - [OBMEP (nível 1)](./provas/olimpiadas-de-matematica/obmep/nivel-1)
+- [OBM (nível 1)](./provas/olimpiadas-de-matematica/obm/nivel-1)
 - [Colégios militares (ensino
   fundamental)](./provas/concursos-militares/ensino-fundamental/colegio-militar/)
 - [OBMEP (nível 2)](./provas/olimpiadas-de-matematica/obmep/nivel-2)
 - [Colégios militares (ensino
   médio)](./provas/concursos-militares/ensino-medio/colegio-militar/)
-
-Assim que um nível fica muito fácil, eu passo para o próximo.
 
 ## Livros utilizados
 
