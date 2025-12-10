@@ -32,9 +32,12 @@ seu nível de matemática, é a seguinte:
 - [Colégios militares (ensino
   fundamental)](./provas/concursos-militares/ensino-fundamental/colegio-militar/)
 - [OBMEP (nível 2)](./provas/olimpiadas-de-matematica/obmep/nivel-2)
+- [Colégio Naval](./provas/concursos-militares/ensino-fundamental/colegio-naval/)
 - [Colégios militares (ensino
   médio)](./provas/concursos-militares/ensino-medio/colegio-militar/)
 - [ENEM](./provas/vestibulares/enem/)
+- [UECE](./provas/vestibulares/uece/)
+- [EsPCEx](./provas/concursos-militares/ensino-medio/EsPCEx/)
 
 ## Livros utilizados
 
