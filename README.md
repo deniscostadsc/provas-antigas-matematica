@@ -76,11 +76,11 @@ Existem diversas maneiras de contribuir com esse repositório:
 ### Como baixar as provas
 
 Caso tenha familiaridade com terminal e execução de shell script, pode-se usar o
-[script](./scripts/baixar.sh) para baixar as provas. Mas a ideia não é, e
-nunca foi, fazer um script genérico que consiga baixar arquivos de provas de
-qualquer site. Então esse processo é manual e exige adaptações no código para
-cada site de provas. O [script](./scripts/baixar.sh) tem como dependência ter
-instalado [html-xml-utils](https://tracker.debian.org/pkg/html-xml-utils).
+[script](./scripts/baixar.sh) para baixar as provas. Mas a ideia não é, e nunca
+foi, fazer um script genérico que consiga baixar arquivos de provas de qualquer
+site. Então esse processo é manual e exige adaptações no código para cada site
+de provas. O [script](./scripts/baixar.sh) tem como dependência ter instalado
+[html-xml-utils](https://tracker.debian.org/pkg/html-xml-utils).
 
 Mas você pode perfeitamente baixar as provas manualmente e organizar no
 diretório correspondente e abrir um pull request.
@@ -96,12 +96,22 @@ O padrão de nomenclatura segue as seguinte regras:
 Os item do nome dos arquivos são:
 
 - Ano com 4 dígito.
-- Número do semestre para provas que são aplicads mais de uma vez por ano (opcional).
-- Nível da prova. Para os concursos que se separam por nível, como provas dos colégios militares ou olimpíadas de matemática. Quando a prova usa os nível por etapa do ensino, usa-se o nome da etap, como `ensino-fundamental`. Se usar níveis, usar algo como `nível-1`.
-- Fase da provas. Para concurso que se dividam em mais de uma etapa. Usa-se a palavra fase e o número da fase, como `fase-1`.
+- Número do semestre para provas que são aplicads mais de uma vez por ano
+  (opcional).
+- Nível da prova. Para os concursos que se separam por nível, como provas dos
+  colégios militares ou olimpíadas de matemática. Quando a prova usa os nível
+  por etapa do ensino, usa-se o nome da etap, como `ensino-fundamental`. Se usar
+  níveis, usar algo como `nível-1`.
+- Fase da provas. Para concurso que se dividam em mais de uma etapa. Usa-se a
+  palavra fase e o número da fase, como `fase-1`.
 - Nome do concurso em minusculas
 - Descrição do tipo do arquivo. Pode assumir os seguinte valores:
-  - `gabarito`
-  - `prova-e-gabarito`
-  - `prova-resolvida`
-  - `prova`
+  - `gabarito` (arquivos que tenha apenas as opções corretas sem explicação de
+    como resolver)
+  - `prova-e-gabarito` (arquivo da prova que já contem as respostas das questões
+    sem explicação de como resolver)
+  - `prova-resolvida` (arquivo da prova que já contem as explicações de como
+    resolver cada questão)
+  - `prova` (arquivo que contém apenas a prova)
+  - `resolucao` (arquivo separado que contem as explicações de como resolver
+    cada questão, e consequantemente o gabarito)
