@@ -3,7 +3,7 @@
 # set -vx
 set -euo pipefail
 
-FOLDER="provas/olimpiadas-de-matematica/obmep/nivel-1/"
+FOLDER="provas/olimpiadas-de-matematica/obmep/nivel-2/"
 cd "$FOLDER"
 
 function extract_year {
@@ -33,7 +33,7 @@ function extract_phase {
 
 function extract_level {
     local filename=${1}
-    local level_pattern='(n)(1)'
+    local level_pattern='(n)(2)'
 
     if [[ "${filename}" =~ ${level_pattern} ]]; then
         echo "nivel-${BASH_REMATCH[2]}"
