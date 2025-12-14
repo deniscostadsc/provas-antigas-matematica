@@ -1,40 +1,58 @@
 # Provas antigas de matemática
 
-Estou estudando matemática. E estudos de longo prazos sempre podem ser
-frustrantes, pois é comum que não consigamos ver uma melhora depois de um tempo.
-Uma maneira de validar o seu conhecimento, e identificar lacunas, é resolver
-provas antigas de olimpíadas, vestibulares e concursos militares (que cobram um
-nível técnico alto nas provas).
+Uma coleção organizada de provas antigas para estudo e prática da matemática.
 
-Durante esse processo tive diversas dificuldade para achar as provas de maneira
-organizada. Cada uma num site diferente, alguns concursos nem disponibilizam as
-provas antigas. Então resolvi baixar e compilar as provas e materiais correlatos
-que eu uso.
+## Sobre
 
-## Como usar este repositório
+Estudar matemática de forma consistente pode ser desafiador - muitas vezes não
+percebemos nosso progresso ao longo do tempo. Uma maneira eficaz de **validar
+conhecimentos** e **identificar lacunas** é resolver provas antigas de:
 
-_Aviso: cada pessoas aprende de maneira diferente. Então o processo aqui
-descrito é pensado para meu uso modo de aprender e de estudar. Apesar disso,
-acredito que ele possa ser útil para mais pessoas._
+- Olimpíadas de matemática.
+- Vestibulares.
+- Concursos militares.
+- etc..
 
-Eu estou estudando matemática do zero, então estou revendo coisas desde o
-fundamental. E para verificar meu progresso, toda semana eu resolvo alguma
-prova. E caso tenha errado alguma questão, de algum assunto já visto, uso essa
-informação para guiar a minha revisão de conteúdo.
+Este repositório surgiu da dificuldade em encontrar essas provas de maneira
+organizada. Cada instituição disponibiliza seus materiais em sites diferentes,
+alguns nem mesmo mantêm arquivos antigos. Aqui, compilei e organizei tudo em um
+só lugar.
 
-Apesar de algumas provas não representarem um desafio técnico alto, elas são
-valiosas, pois fazendo essas provas, como a OBMEP nível 1, descobri que a
-desatenção é um fator muito comum para que eu erre, até mesmo questões de
-assuntos que eu domino. Sendo assim, essas provas "mais fáceis", me ajudam
-lapidar meu método de resolver problema e controlar a ansiedade.
+## Para quem é útil?
 
-A ordem que eu faço as provas varia bastante, mas a heurística básica que eu uso
-é:
+Principalmente para:
+- Estudantes que estão aprendendo matemática do zero.
+- Pessoas que desejam revisar conteúdos do ensino fundamental e médio.
+- Quem busca material estruturado para prática constante.
+- Professores em busca de material de apoio.
+- Quem está se preparando para alguma prova.
 
-> Se uma proca é muito fácil, já pode fazer uma prova mais difícil. Se uma prova
-> está muito difícil, volte para provas mais fáceis.
+## Método de Estudo Proposto
 
-As provas aqui reunidas podem ser ordenadas por dificuldade técnica assim:
+> **Aviso**: Cada pessoa aprende de forma diferente. Este método foi
+> desenvolvido para meu próprio processo de aprendizado, mas pode ser adaptado
+> por outros.
+
+### Princípios básicos:
+
+1. **Prática recorrente**: Resolver pelo menos uma prova por semana/quinzena/mês.
+2. **Análise de erros**: Questões erradas guiam a revisão de conteúdo.
+3. **Autoavaliação contínua**: Provas servem como termômetro do progresso.
+
+### Por que provas "fáceis" são importantes?
+
+Mesmo provas como a OBMEP Nível 1 são valiosas porque ajudam a:
+- Identificar problemas de **desatenção**.
+- Lapidar o **método de resolução de problemas**.
+- Controlar a **ansiedade durante provas**.
+- Consolidar conhecimentos básicos.
+
+### Heurística de escolha das provas
+
+Prova muito fácil, avance para mais difícil. Prova muito difícil, volte para
+mais fácil.
+
+## Lista das provas reunidas ordenadas por dificuldade técnica
 
 - [OBMEP (nível 1)](./provas/olimpiadas-de-matematica/obmep/nivel-1)
 - [OBM (nível 1)](./provas/olimpiadas-de-matematica/obm/nivel-1)
@@ -49,7 +67,7 @@ As provas aqui reunidas podem ser ordenadas por dificuldade técnica assim:
 - [UECE](./provas/vestibulares/uece/)
 - [EsPCEx](./provas/concursos-militares/ensino-medio/EsPCEx/)
 
-## Livros utilizados
+## Livros de referência
 
 O livros que utilizei durante o meu aprendizado foram:
 
@@ -70,8 +88,8 @@ Existem diversas maneiras de contribuir com esse repositório:
 
 - Adicionar provas que faltam de um determinado concurso pré-existente.
 - Adicionar provas de novos concursos.
-- Renomear as provas já existente de uma maneira mas organizada.
-- Adicionar provas resolvidas (a maior parte das provas tem apenas o gabarito)
+- Renomear as provas já existentes de uma maneira mais organizada.
+- Adicionar provas resolvidas (a maior parte das provas tem apenas o gabarito).
 
 ### Como baixar as provas
 
@@ -85,33 +103,24 @@ de provas. O [script](./scripts/baixar.sh) tem como dependência ter instalado
 Mas você pode perfeitamente baixar as provas manualmente e organizar no
 diretório correspondente e abrir um pull request.
 
-### Como nomear as provas
-
-O padrão de nomenclatura segue as seguinte regras:
+### Padrão de nomenclatura
 
 - Os arquivos relacionado devem ficar juntos depois de renomeados.
 - Não deve haver espaço para separar as palavras, mas traço (`-`).
 - Não se deve usar letras maiúsculas.
   
-Os item do nome dos arquivos são:
+Os component do nome dos arquivos são:
 
-- Ano com 4 dígito.
-- Número do semestre para provas que são aplicads mais de uma vez por ano
-  (opcional).
-- Nível da prova. Para os concursos que se separam por nível, como provas dos
-  colégios militares ou olimpíadas de matemática. Quando a prova usa os nível
-  por etapa do ensino, usa-se o nome da etap, como `ensino-fundamental`. Se usar
-  níveis, usar algo como `nível-1`.
-- Fase da provas. Para concurso que se dividam em mais de uma etapa. Usa-se a
-  palavra fase e o número da fase, como `fase-1`.
-- Nome do concurso em minusculas
-- Descrição do tipo do arquivo. Pode assumir os seguinte valores:
-  - `gabarito` (arquivos que tenha apenas as opções corretas sem explicação de
-    como resolver)
-  - `prova-e-gabarito` (arquivo da prova que já contem as respostas das questões
-    sem explicação de como resolver)
-  - `prova-resolvida` (arquivo da prova que já contem as explicações de como
-    resolver cada questão)
-  - `prova` (arquivo que contém apenas a prova)
-  - `resolucao` (arquivo separado que contem as explicações de como resolver
-    cada questão, e consequantemente o gabarito)
+- Ano: 4 dígitos (`2023`, `1998`).
+- Semestre (opcional): número (`1`, `2`).
+- Nível: nivel-X ou etapa (`nivel-1`, `ensino-fundamental`).
+- Fase: fase-X (`fase-1`, `fase-2`).
+- Concurso: nome em minúsculas (`obmep`, `enem`, `colegio-militar-brasilia`).
+- Tipo: `gabarito`, `prova`, `prova-e-gabarito`, `prova-resolvida`, `resolucao`.
+
+#### Exemplos
+
+```
+2023-nivel-1-fase-1-obmep-prova.pdf
+2023-nivel-1-fase-1-obmep-resolucao.pdf
+````
