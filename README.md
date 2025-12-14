@@ -113,8 +113,8 @@ Os component do nome dos arquivos são:
 
 - Ano: 4 dígitos (`2023`, `1998`).
 - Semestre (opcional): número (`1`, `2`).
-- Nível: nivel-X ou etapa (`nivel-1`, `ensino-fundamental`).
-- Fase: fase-X (`fase-1`, `fase-2`).
+- Nível: nivel-x ou etapa (`nivel-1`, `ensino-fundamental`).
+- Fase: fase-x (`fase-1`, `fase-2`).
 - Concurso: nome em minúsculas (`obmep`, `enem`, `colegio-militar-brasilia`).
 - Tipo: `gabarito`, `prova`, `prova-e-gabarito`, `prova-resolvida`, `resolucao`.
 
