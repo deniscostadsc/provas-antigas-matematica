@@ -84,3 +84,24 @@ instalado [html-xml-utils](https://tracker.debian.org/pkg/html-xml-utils).
 
 Mas você pode perfeitamente baixar as provas manualmente e organizar no
 diretório correspondente e abrir um pull request.
+
+### Como nomear as provas
+
+O padrão de nomenclatura segue as seguinte regras:
+
+- Os arquivos relacionado devem ficar juntos depois de renomeados.
+- Não deve haver espaço para separar as palavras, mas traço (`-`).
+- Não se deve usar letras maiúsculas.
+  
+Os item do nome dos arquivos são:
+
+- Ano com 4 dígito.
+- Número do semestre para provas que são aplicads mais de uma vez por ano (opcional).
+- Nível da prova. Para os concursos que se separam por nível, como provas dos colégios militares ou olimpíadas de matemática. Quando a prova usa os nível por etapa do ensino, usa-se o nome da etap, como `ensino-fundamental`. Se usar níveis, usar algo como `nível-1`.
+- Fase da provas. Para concurso que se dividam em mais de uma etapa. Usa-se a palavra fase e o número da fase, como `fase-1`.
+- Nome do concurso em minusculas
+- Descrição do tipo do arquivo. Pode assumir os seguinte valores:
+  - `gabarito`
+  - `prova-e-gabarito`
+  - `prova-resolvida`
+  - `prova`
