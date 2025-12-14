@@ -3,7 +3,7 @@
 # set -vx
 set -euo pipefail
 
-FOLDER="provas/olimpiadas-de-matematica/obm/nivel-1/"
+FOLDER="provas/olimpiadas-de-matematica/obmep/nivel-1/"
 cd "$FOLDER"
 
 function extract_year {
@@ -21,10 +21,10 @@ function extract_year {
 
 function extract_phase {
     local filename=${1}
-    local phase_pattern='(1)([fF]ase)'
+    local phase_pattern='(f)(1)'
 
     if [[ "${filename}" =~ ${phase_pattern} ]]; then
-        echo "fase-${BASH_REMATCH[1]}"
+        echo "fase-${BASH_REMATCH[2]}"
         return 0
     fi
 
@@ -33,7 +33,7 @@ function extract_phase {
 
 function extract_level {
     local filename=${1}
-    local level_pattern='(N|Nivel)(1)'
+    local level_pattern='(n)(1)'
 
     if [[ "${filename}" =~ ${level_pattern} ]]; then
         echo "nivel-${BASH_REMATCH[2]}"
@@ -46,17 +46,14 @@ function extract_level {
 
 function extract_file_type {
     local filename=${1}
-    local file_type_pattern='(gabarito)'
+    local file_type_pattern='^p'
     local year=$(extract_year "${filename}")
 
     if [[ "${filename}" =~ ${file_type_pattern} ]]; then
-        echo "resolucao"
-        return 0
-    elif [[ $((count_per_year_cache[${year}])) -gt 1 ]]; then
         echo "prova"
         return 0
     else
-        echo "prova-resolvida"
+        echo "resolucao"
         return 0
     fi
 }
@@ -85,5 +82,9 @@ for file in *.pdf; do
         file_type=$(extract_file_type "${file}")
 
         mv "${file}" "${year}-${level}-${phase}-obm-${file_type}.pdf"
+        echo
+        echo "${file}"
+        echo "${year}-${level}-${phase}-obm-${file_type}.pdf"
+        echo 
     fi
 done
