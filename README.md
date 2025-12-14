@@ -2,37 +2,47 @@
 
 Estou estudando matemática. E estudos de longo prazos sempre podem ser
 frustrantes, pois é comum que não consigamos ver uma melhora depois de um tempo.
-Uma maneira de validar o seu conhecimento é resolver provas antigas de concursos
-ou vestibulares.
+Uma maneira de validar o seu conhecimento, e identificar lacunas, é resolver
+provas antigas de olimpíadas, vestibulares e concursos militares (que cobram um
+nível técnico alto nas provas).
 
 Durante esse processo tive diversas dificuldade para achar as provas de maneira
 organizada. Cada uma num site diferente, alguns concursos nem disponibilizam as
 provas antigas. Então resolvi baixar e compilar as provas e materiais correlatos
-que uso.
-
-Este repositório reune provas antigas de diversos níveis e concursos diferentes.
+que eu uso.
 
 ## Como usar este repositório
 
-Cada pessoas aprende de maneira diferente. Então o processo aqui descrito é
-pensado para meu uso exclusivo. Mas apesar disso, acredito que ele possa ser
-útil para mais pessoas.
+_Aviso: cada pessoas aprende de maneira diferente. Então o processo aqui
+descrito é pensado para meu uso modo de aprender e de estudar. Apesar disso,
+acredito que ele possa ser útil para mais pessoas._
 
 Eu estou estudando matemática do zero, então estou revendo coisas desde o
 fundamental. E para verificar meu progresso, toda semana eu resolvo alguma
-prova. E caso tenha errado algumas questão de algum assunto já visto, reviso o
-assunto na semana sequinte. Assim que um nível de prova fica muito fácil, eu
-passo para o próximo.
+prova. E caso tenha errado alguma questão, de algum assunto já visto, uso essa
+informação para guiar a minha revisão de conteúdo.
 
-Talvez a ordem mais adequada, principalmente quando não se tem uma certeza sobre
-seu nível de matemática, é a seguinte:
+Apesar de algumas provas não representarem um desafio técnico alto, elas são
+valiosas, pois fazendo essas provas, como a OBMEP nível 1, descobri que a
+desatenção é um fator muito comum para que eu erre, até mesmo questões de
+assuntos que eu domino. Sendo assim, essas provas "mais fáceis", me ajudam
+lapidar meu método de resolver problema e controlar a ansiedade.
+
+A ordem que eu faço as provas varia bastante, mas a heurística básica que eu uso
+é:
+
+> Se uma proca é muito fácil, já pode fazer uma prova mais difícil. Se uma prova
+> está muito difícil, volte para provas mais fáceis.
+
+As provas aqui reunidas podem ser ordenadas por dificuldade técnica assim:
 
 - [OBMEP (nível 1)](./provas/olimpiadas-de-matematica/obmep/nivel-1)
 - [OBM (nível 1)](./provas/olimpiadas-de-matematica/obm/nivel-1)
 - [Colégios militares (ensino
   fundamental)](./provas/concursos-militares/ensino-fundamental/colegio-militar/)
 - [OBMEP (nível 2)](./provas/olimpiadas-de-matematica/obmep/nivel-2)
-- [Colégio Naval](./provas/concursos-militares/ensino-fundamental/colegio-naval/)
+- [Colégio
+  Naval](./provas/concursos-militares/ensino-fundamental/colegio-naval/)
 - [Colégios militares (ensino
   médio)](./provas/concursos-militares/ensino-medio/colegio-militar/)
 - [ENEM](./provas/vestibulares/enem/)
@@ -41,16 +51,36 @@ seu nível de matemática, é a seguinte:
 
 ## Livros utilizados
 
-Eu estou utilizando os seguinte livros:
+O livros que utilizei durante o meu aprendizado foram:
 
+- [Manual Compacto da Matemática - Ensino
+  Fundamental](https://archive.org/details/mc-matem-ef)
 - [Teoria e Questões de Matemática - Ensino Fundamental (TQM
   verde)](https://www.editoraxyz.com/tqm---teoria-e-questoes-de-matematica-ensino-fundamental/p)
+- [Manual Compacto da Matemática - Ensino
+  Médio](https://archive.org/details/mc-matem-em_202503)
+- [Teoria e Questões de Matemática - Ensino Médio (TQM
+  azul)](https://www.editoraxyz.com/tqm---teoria-e-questoes-de-matematica-ensino-medio-pre-venda/p)
 - [Tópicos de Álgebra Elementar (capeta
   azul)](https://loja.uiclap.com/titulo/ua49428/)
 
-## Como baixar as provas
+## Como contribuir
 
-A ideia não é, e nunca foi, fazer um script genérico que consiga baixar arquivos
-de provas de qualquer site. Então esse processo é manual e exige adaptações para
-cada site. O [script atual](./scripts/download.sh) tem como dependência ter instalado
-[html-xml-utils](https://tracker.debian.org/pkg/html-xml-utils). 
+Existem diversas maneiras de contribuir com esse repositório:
+
+- Adicionar provas que faltam de um determinado concurso pré-existente.
+- Adicionar provas de novos concursos.
+- Renomear as provas já existente de uma maneira mas organizada.
+- Adicionar provas resolvidas (a maior parte das provas tem apenas o gabarito)
+
+### Como baixar as provas
+
+Caso tenha familiaridade com terminal e execução de shell script, pode-se usar o
+[script](./scripts/download.sh) para baixar as provas. Mas a ideia não é, e
+nunca foi, fazer um script genérico que consiga baixar arquivos de provas de
+qualquer site. Então esse processo é manual e exige adaptações no código para
+cada site de provas. O [script](./scripts/download.sh) tem como dependência ter
+instalado [html-xml-utils](https://tracker.debian.org/pkg/html-xml-utils).
+
+Mas você pode perfeitamente baixar as provas manualmente e organizar no
+diretório correspondente e abrir um pull request.
