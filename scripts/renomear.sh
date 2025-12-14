@@ -47,10 +47,10 @@ function extract_level {
 function extract_file_type {
     local filename=${1}
     local file_type_pattern='(gabarito)'
-    local year=$(extract_year "${file}")
+    local year=$(extract_year "${filename}")
 
     if [[ "${filename}" =~ ${file_type_pattern} ]]; then
-        echo "gabarito"
+        echo "resolucao"
         return 0
     elif [[ $((count_per_year_cache[${year}])) -gt 1 ]]; then
         echo "prova"
