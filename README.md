@@ -76,10 +76,10 @@ Existem diversas maneiras de contribuir com esse repositório:
 ### Como baixar as provas
 
 Caso tenha familiaridade com terminal e execução de shell script, pode-se usar o
-[script](./scripts/download.sh) para baixar as provas. Mas a ideia não é, e
+[script](./scripts/baixar.sh) para baixar as provas. Mas a ideia não é, e
 nunca foi, fazer um script genérico que consiga baixar arquivos de provas de
 qualquer site. Então esse processo é manual e exige adaptações no código para
-cada site de provas. O [script](./scripts/download.sh) tem como dependência ter
+cada site de provas. O [script](./scripts/baixar.sh) tem como dependência ter
 instalado [html-xml-utils](https://tracker.debian.org/pkg/html-xml-utils).
 
 Mas você pode perfeitamente baixar as provas manualmente e organizar no
