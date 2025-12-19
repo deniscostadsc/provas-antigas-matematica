@@ -3,13 +3,13 @@
 # set -vx
 set -euo pipefail
 
-FOLDER="provas/concursos-militares/ensino-fundamental/colegio-militar/belem/"
+FOLDER="provas/concursos-militares/ensino-medio/colegio-militar/rio-de-janeiro/cmrj-2012-2013-gabarito-medio.pdf"
 
 cd "$FOLDER"
 
 function extract_year {
     local filename=${1}
-    local year_pattern='cmbe?l?-([12][09][0-9][0-9])'
+    local year_pattern='cmrj-([0-9]{4})'
 
     if [[ "${filename}" =~ ${year_pattern} ]]; then
         echo "${BASH_REMATCH[1]}"
@@ -33,35 +33,45 @@ function extract_phase {
 }
 
 function extract_level {
-    echo "ensino-fundamental"
-    return 0
+    # echo "ensino-fundamental"
+    # return 0
 
     local filename=${1}
-    local level_pattern='(n)(2)'
+    local level_pattern='1ano'
 
     if [[ "${filename}" =~ ${level_pattern} ]]; then
-        echo "nivel-${BASH_REMATCH[2]}"
+        echo "ensino-medio"
+        return 0
+    else
+        echo "ensino-fundamental"
         return 0
     fi
 
-    echo ""
-    return 1
+    # echo ""
+    # return 1
 }
 
 function extract_file_type {
     local filename=${1}
-    local file_type_pattern='gabarito'
+    local file_type_pattern='GAB'
     local year=$(extract_year "${filename}")
 
+    # if [[ "${filename}" =~ ${file_type_pattern} ]]; then
+    #     echo "gabarito"
+    #     return 0
+    # elif [[ $((count_per_year_cache[${year}])) -gt 1 ]]; then
+    #     echo "prova"
+    # else
+    #     echo "prova-e-gabarito"
+    #     return 0
+    # fi
+
     if [[ "${filename}" =~ ${file_type_pattern} ]]; then
-        echo "gabarito"
-        return 0
-    elif [[ $((count_per_year_cache[${year}])) -gt 1 ]]; then
-        echo "prova"
-    else
-        echo "prova-e-gabarito"
+        echo "prova-resolvida"
         return 0
     fi
+    echo "prova"
+    return 0
 }
 
 declare -A phase_cache
@@ -86,11 +96,12 @@ for file in *.pdf; do
         level=$(extract_level "${file}")
         # phase="${phase_cache[${year}]}"
         file_type=$(extract_file_type "${file}")
+        new_name="${year}-${level}-colegio-militar-rio-de-janeiro-${file_type}.pdf"
+        mv "${file}" "${new_name}"
 
-        mv "${file}" "${year}-${level}-colegio-militar-belem-${file_type}.pdf"
         echo
         echo "${file}"
-        echo "${year}-${level}-colegio-militar-belem-${file_type}.pdf"
+        echo "${new_name}"
         echo 
     fi
 done

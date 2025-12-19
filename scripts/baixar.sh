@@ -14,9 +14,19 @@ function download_html_from_url {
 function get_pdf_links_from_html {
     hxnormalize -xe "${1}" |\
     hxselect -s '\n' '::attr(href)' |\
-    grep -i '"[^"]*matem[aá]tica[^"]*\.pdf"' |\
+    grep -i '"[^"]*CMRJ[^"]*\.pdf"' |\
     # grep -i '"[^"]*gabarito[^"]*\.pdf"' |\
     sed 's/href="//g;s/"//g'
+}
+
+function get_domain {
+    local url="$1"
+
+    if [[ "${url}" =~ ^([^:/]+://[^/]+)/ ]]; then
+        echo "${BASH_REMATCH[1]}"
+    else
+        echo "${url}"
+    fi
 }
 
 function main {
@@ -24,7 +34,7 @@ function main {
     links=$(get_pdf_links_from_html "${TEMPFILE}")
 
     for link in ${links}; do
-        wget "${URL}${link}"
+        wget "$(get_domain "${URL}")/${link}"
     done
 }
 
