@@ -39,9 +39,14 @@ Principalmente para:
 2. **Análise de erros**: Questões erradas guiam a revisão de conteúdo.
 3. **Autoavaliação contínua**: Provas servem como termômetro do progresso.
 
-### Por que provas "fáceis" são importantes?
+### Por que fazer provas "fáceis" é importante?
 
-Mesmo provas como a OBMEP Nível 1 são valiosas porque ajudam a:
+> **Aviso**: O conceito de fácil é pessoal, e varia de acordo com a conhecimento e
+> maturidade intelectual de cada indivíduo. Então aqui trataremos como "fácil",
+> qualquer prova fácil para o usuário desse repositório.
+
+Mesmo provas fáceis são valiosas pois ajudam a:
+
 - Identificar problemas de **desatenção**.
 - Lapidar o **método de resolução de problemas**.
 - Controlar a **ansiedade durante provas**.
