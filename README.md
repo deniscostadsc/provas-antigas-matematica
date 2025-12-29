@@ -41,7 +41,7 @@ Principalmente para:
 
 ### Por que fazer provas "fáceis" é importante?
 
-> **Aviso**: O conceito de fácil é pessoal, e varia de acordo com a conhecimento e
+> **Aviso**: O conceito de fácil é pessoal, e varia de acordo com o conhecimento e
 > maturidade intelectual de cada indivíduo. Então aqui trataremos como "fácil",
 > qualquer prova fácil para o usuário desse repositório.
 
