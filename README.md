@@ -61,9 +61,9 @@ mais fácil.
 
 - [OBMEP (nível 1)](./provas/olimpiadas-de-matematica/obmep/nivel-1)
 - [OBM (nível 1)](./provas/olimpiadas-de-matematica/obm/nivel-1)
+- [OBMEP (nível 2)](./provas/olimpiadas-de-matematica/obmep/nivel-2)
 - [Colégios militares (ensino
   fundamental)](./provas/concursos-militares/ensino-fundamental/colegio-militar/)
-- [OBMEP (nível 2)](./provas/olimpiadas-de-matematica/obmep/nivel-2)
 - [OBMEP (nível 3)](./provas/olimpiadas-de-matematica/obmep/nivel-3)
 - [Colégio
   Naval](./provas/concursos-militares/ensino-fundamental/colegio-naval/)
